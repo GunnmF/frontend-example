@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: moumou.v1@foxmail.com
  * @Date: 2023-01-13 17:44:26
- * @LastEditTime: 2023-04-28 00:17:47
+ * @LastEditTime: 2023-04-28 00:24:52
  * @LastEditors: moumou.v1@foxmail.com
 -->
 <script setup lang="ts">
@@ -10,7 +10,7 @@ import { reactive, ref } from 'vue'
 const text = ref('')
 const form = reactive({
   user_name: 'user_name',
-  code: '',
+  code: '1111',
 })
 function c2() {
   fetch('https://backend.col.cool/v1/user/code', {
