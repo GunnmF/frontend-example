@@ -13,7 +13,7 @@ const form = reactive({
   code: '',
 })
 function c2() {
-  fetch('/api/v1/user/code', {
+  fetch('https://backend.col.cool/api/v1/user/code', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -27,9 +27,9 @@ function c2() {
     })
 }
 
-const url = ref('/api/v1/user/code')
+const url = ref('https://backend.col.cool/api/v1/user/code')
 function c1() {
-  url.value = '/api/v1/user/code?' + Math.random()
+  url.value = 'https://backend.col.cool/api/v1/user/code?' + Math.random()
 }
 </script>
 
