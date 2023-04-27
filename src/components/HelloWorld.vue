@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: moumou.v1@foxmail.com
  * @Date: 2023-01-13 17:44:26
- * @LastEditTime: 2023-04-25 19:08:47
+ * @LastEditTime: 2023-04-28 00:17:47
  * @LastEditors: moumou.v1@foxmail.com
 -->
 <script setup lang="ts">
@@ -13,7 +13,7 @@ const form = reactive({
   code: '',
 })
 function c2() {
-  fetch('https://backend.col.cool/api/v1/user/code', {
+  fetch('https://backend.col.cool/v1/user/code', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -27,9 +27,9 @@ function c2() {
     })
 }
 
-const url = ref('https://backend.col.cool/api/v1/user/code')
+const url = ref('https://backend.col.cool/v1/user/code')
 function c1() {
-  url.value = 'https://backend.col.cool/api/v1/user/code?' + Math.random()
+  url.value = 'https://backend.col.cool/v1/user/code?' + Math.random()
 }
 </script>
 
